@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0; /* удаляем отступы по умолчанию */
+  }
+  
+.header {
+    width: calc(100% - 20px); /* ширина рамки = ширина экрана - 10px (отступы по бокам) */
+    height: 70px; /* высота рамки */
+    background-color: #ccc; /* цвет рамки */
+    border: 1px solid #000; /* рамка */
+    margin: 8px 8px 0 8px; /* отступы сверху и по бокам */
+    display: flex; /* используем flexbox для центрирования текста */
+    justify-content: center; /* центрируем текст по горизонтали */
+    align-items: center; /* центрируем текст по вертикали */
+}
+  
+.logo {
+    width: 50px; /* ширина логотипа */
+    height: 50px; /* высота логотипа */
+    background-color: #fff; /* цвет логотипа */
+    border: 1px solid #000; /* рамка логотипа */
+    margin: 10px; /* отступы со всех сторон */
+    position: absolute; /* используем absolute positioning для логотипа */
+    left: 8px; /* отступ слева */
+    top: 8px; /* отступ сверху */
+}
+  
+.header-text {
+    font-size: 24px; /* размер текста */
+    color: #000; /* цвет текста */
+}
+
+.pnglogo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav {
+    position: fixed;
+    top: 120px;
+    left: 8px; /* прижимаем навигацию к левому краю экрана с отступом 8px */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* выравниваем кнопки по левому краю */
+    padding: 0; /* удаляем отступы */
+}
+  
+.nav-button {
+    width: 200px; /* ширина кнопок */
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #ccc; /* цвет кнопок, как у header */
+    border: 1px solid #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0; /* убраны закругленные углы */
+}
+  
+.nav-button:hover {
+    background-color: #23527c; /* цвет кнопок при наведении */
+    color: white;
+}
+
+.new-container {
+    position: absolute; /* позиционируем контейнер */
+    width: 80%; /* ширина контейнера равна ширине экрана */
+    height: 700px; /* высота контейнера равна 300px */
+    border: 1px solid #000; /* рамки контейнера черного цвета */
+    left: 16%;
+    top: 11%;
+    display: flex; /* используем flexbox для центрирования текста */
+    justify-content: center; /* центрируем текст по горизонтали */
+    align-items: center; /* центрируем текст по вертикали */
+}  
+
+.additional-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* центрируем кнопки горизонтально */
+    position: absolute; /* позиционируем над футером */
+    bottom: 100px; /* корректируем позицию над футером */
+    left: 50%; /* центрируем контейнер относительно футера */
+    transform: translateX(-50%); /* смещаем контейнер влево на половину его ширины */
+}
+  
+.additional-nav-button {
+    width: 200px;
+    height: 20px;
+    background-color: #ccc;
+    border: 1px solid #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+    margin: 0 5px; /* добавляем отступ в 5px между кнопками */
+}
+  
+.additional-nav-button:hover {
+    background-color: #23527c;
+    color: white;
+}
+
+.footer {
+    width: calc(100% - 20px); /* ширина рамки = ширина экрана - 10px (отступы по бокам) */
+    height: 40px; /* высота рамки */
+    background-color: #ccc; /* цвет рамки */
+    border: 1px solid #000; /* рамка */
+    display: flex; /* используем flexbox для центрирования текста */
+    justify-content: center; /* центрируем текст по горизонтали */
+    align-items: center; /* центрируем текст по вертикали */
+    position: absolute; /* делаем футер абсолютно позиционированным */
+    bottom: 8px; /* прижимаем футер к низу экрана с отступом 8px */
+    left: 8px; /* прижимаем футер к левому краю экрана с отступом 8px */
+    right: 8px; /* прижимаем футер к правому краю экрана с отступом 8px */
+}
+  
+.footer-text {
+    font-size: 18px; /* размер текста */
+    color: #000; /* цвет текста */
+}
